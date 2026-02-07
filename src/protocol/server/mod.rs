@@ -1,0 +1,15 @@
+pub mod char_create;
+pub mod char_list;
+pub mod chat;
+pub mod clan;
+pub mod combat;
+pub mod game_init;
+pub mod init;
+pub mod inventory;
+pub mod login;
+pub mod movement;
+pub mod npc_dialog;
+pub mod npc_pack;
+pub mod skill;
+pub mod skill_effect;
+pub mod teleport;

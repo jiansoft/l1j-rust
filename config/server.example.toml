@@ -1,0 +1,28 @@
+# L1J-Rust Server Configuration
+# 修改以下設定以匹配你的環境
+
+[server]
+# 監聽地址和端口（客戶端登入器要連到這個端口）
+host = "0.0.0.0"
+port = 7000
+max_online_users = 200
+
+[database]
+# MySQL 連線字串 - 指向你的 L1JTW 資料庫
+# 格式: mysql://帳號:密碼@主機:端口/資料庫名
+# 範例: mysql://root:123456@localhost:3306/l1jtw
+url = "mysql://root:123456@localhost:3306/l1jtw"
+max_connections = 10
+
+[game]
+# Tick 間隔（毫秒），200ms = 5 ticks/秒
+tick_interval_ms = 200
+# NPC AI 休眠範圍（格），超過此距離無玩家時 NPC 暫停 AI
+npc_ai_sleep_range = 30
+# 封包批次發送（每 tick 結束統一 flush）
+packet_batch_flush = true
+
+[paths]
+# 地圖檔案路徑（相對於伺服器執行目錄）
+# 如果你的地圖在 L1J-TW_3.80c/maps/ 目錄下，設定為該路徑
+maps_dir = "../L1J-TW_3.80c/maps"
